@@ -48,6 +48,22 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  # Brakeman is an open source static analysis tool which checks Ruby on Rails applications for security vulnerabilities.
+  # command: brakeman || url: https://github.com/presidentbeef/brakeman
+  gem 'brakeman', :require => false
+
+  # Fasterer will suggest some speed improvements
+  # command: fasterer || url: https://github.com/DamirSvrtan/fasterer
+  gem 'fasterer', :require => false
+
+  # Rubocop is a Ruby static code analyzer. Apart from reporting problems in your code, RuboCop can also automatically fix some of the problems for you.
+  # command: bundle exec rubocop -D -S || url: https://github.com/rubocop-hq/rubocop
+  gem 'rubocop', require: false
+
+  # Rubycritic is a gem that wraps around static analysis gems such as Reek, Flay and Flog to provide a quality report of your Ruby code.
+  # command: rubycritic  || url: https://github.com/whitesmith/rubycritic
+  gem "rubycritic", require: false
 end
 
 group :test do
