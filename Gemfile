@@ -42,6 +42,9 @@ gem 'rubyXL'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  # Pry is a powerful alternative to the standard IRB shell for Ruby. Url: https://github.com/pry/pry
+  gem 'pry'
 end
 
 group :development do
